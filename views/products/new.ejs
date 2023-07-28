@@ -8,7 +8,7 @@
    <style>
      /* Custom styles */
      body{
-      background-color: rgb(90, 90, 210);
+      background-color: white;
      }
    </style>
 </head>
@@ -17,16 +17,16 @@
     <%- include('../partials/navbar') %>
 
     <div class="container mt-5 d-flex justify-content-center">
-      <div class="custom-form-container  col-11 col-md-8 col-lg-5 p-4 bg-white text-dark" style="border-radius:10px;">
-        <h3 class="mb-4 text-center">New Quote</h3>
+      <div class="custom-form-container  col-12 col-md-9 col-lg-5 p-4 bg-white text-dark" style="border:2px solid red;border-radius: 8px;">
+        <!-- <h3 class="mb-4 text-center">New Quote</h3> -->
         <form action="/products" method="POST">
           <label for="author" class="form-label">Author:</label>
-                <input type="text" class="form-control mt-1"  id="author" name="author"  required>
+                <input type="text" class="form-control mt-1"  id="author" name="author" placeholder="Author"  required>
       
                   <label for="quote" class="form-label mt-2" >Quotes:</label>
-                  <textarea  id="quote" cols="30" rows="3" name="quote" class="form-control mt-1" ></textarea>
+                  <textarea  id="quote" cols="30" rows="4" name="quote" class="form-control mt-1" placeholder="Quotes" ></textarea>
       
-                  <button type="submit" class="btn btn-warning mt-3 ">Add Quotes</button>
+                  <button type="submit" class="btn btn-primary mt-3 ">Add Quotes</button>
         </form>
       </div>
     </div>
